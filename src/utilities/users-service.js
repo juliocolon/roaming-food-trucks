@@ -21,7 +21,7 @@ export function getToken() {
     if(payload.exp < Date.now() / 1000) {
         localStorage.removeItem('token')
         return null
-    }
+    }v
     return token
 }
 
